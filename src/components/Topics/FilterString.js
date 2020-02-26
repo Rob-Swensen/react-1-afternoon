@@ -16,12 +16,12 @@ class FilterString extends Component{
         this.setState({userInput: val});
     }
 
-    filterNames(input){
+    filterNames(userInput){
         let names = this.state.names;
         let filteredNames = [];
 
         for(let i = 0; i < names.length; i++){
-            if(names[i].includes(input)){
+            if(names[i].includes(userInput)){
                 filteredNames.push(names[i]);
             }
         }
